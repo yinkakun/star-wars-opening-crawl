@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .glow-blue {
+    text-shadow: 0 0 5px hsla(189, 83%, 61%, 0.6), 0 0 30px hsla(189, 83%, 61%, 0.9);
+  }
+
+  .perspective {
+    perspective: 300px;
+    perspective-origin: '50% 30%';
+    transform-style: preserve-3d;
+    will-change: perspective-origin;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .radial-background {
+    background: radial-gradient(circle at 50%, #145b78, transparent 60%);
+  }
+}

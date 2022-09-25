@@ -8,6 +8,15 @@ module.exports = {
       fontFamily: {
         sans: ['FranklinGothic', ...defaultTheme.fontFamily.sans],
       },
+      animation: {
+        'background-image-move': 'background-image-move 30s linear infinite alternate',
+      },
+      keyframes: {
+        'background-image-move': {
+          from: { backgroundPosition: '0% -100%' },
+          to: { backgroundPosition: '0% 0%' },
+        },
+      },
     },
   },
 };
